@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.merhi.idreader.SetPINActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="35dp"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        style="@style/Logo"
+        android:layout_below="@id/linearLayout" />
+
+    <TextView
+        android:id="@+id/setPinMsg"
+        style="@style/Message"
+        android:layout_below="@id/logo"
+        android:text="@string/set_pin_msg_1" />
+
+
+    <EditText
+        android:id="@+id/inputSetPin"
+        style="@style/InputSetPin"
+        android:layout_below="@id/setPinMsg" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        style="@style/Btn"
+        android:layout_below="@+id/inputSetPin"
+        android:text="@string/next" />
+
+
+</RelativeLayout>

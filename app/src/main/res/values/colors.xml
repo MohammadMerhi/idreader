@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#40afff</color>
+    <color name="colorMessage">#a9a6a6</color>
+    <color name="colorInput">#414141</color>
+    <color name="colorBtn">#ec40afff</color>
+    <color name="colorBtnText">#ffffff</color>
+    <color name="colorBtnMainScan">#77c7fe</color>
+    <color name="colorBtnMainEntry">#fdfdfe</color>
+    <color name="colorManualEntry">#858080</color>
+    <color name="colorActionBarTwo">#f9f9f9</color>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.merhi.idreader.MainActivity">
+
+    <RelativeLayout
+        style="@style/BigBtnMainRelativeLayout"
+        android:background="@color/colorBtnMainScan"
+        android:clickable="true"
+        android:onClick="goToScanID">
+
+        <ImageView
+            android:id="@+id/circle"
+            style="@style/ImageViewInRelativeLayout"
+            android:src="@drawable/circle" />
+
+        <TextView
+            style="@style/textViewMain"
+            android:layout_below="@id/circle"
+            android:text="@string/main_scanID_btn"
+            android:textColor="@color/colorBtnMainEntry"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/BigBtnMainRelativeLayout"
+        android:background="@color/colorBtnMainEntry"
+        android:clickable="true"
+        android:onClick="goToManualEntry">
+
+        <ImageView
+            android:id="@+id/edit"
+            style="@style/ImageViewInRelativeLayout"
+            android:src="@drawable/edit" />
+
+        <TextView
+            style="@style/textViewMain"
+            android:layout_below="@id/edit"
+            android:text="@string/main_manual_entry_btn"
+            android:textColor="@color/colorInput"/>
+    </RelativeLayout>
+
+</LinearLayout>

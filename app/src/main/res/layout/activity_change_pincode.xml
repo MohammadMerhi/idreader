@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.merhi.idreader.ChangePINCode">
+
+    <TextView
+        style="@style/title_change_pin"
+        android:text="@string/enter_your_old_pin"
+        android:id="@+id/change_pin_title"
+        />
+    <EditText
+        style="@style/InputSetPin"
+        android:layout_below="@+id/change_pin_title"
+        android:id="@+id/input_field"/>
+    <Button
+        style="@style/Btn"
+        android:layout_below="@+id/input_field"
+        android:text="@string/next"/>
+
+</RelativeLayout>
