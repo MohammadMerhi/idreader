@@ -22,6 +22,14 @@
 
         <TextView
             style="@style/TextViewManualEntry"
+            android:text="@string/manual_entry_middle_name" />
+
+        <EditText
+            android:id="@+id/middle_name"
+            style="@style/InputFieldManualEntry" />
+
+        <TextView
+            style="@style/TextViewManualEntry"
             android:text="@string/manual_entry_last_name" />
 
         <EditText
@@ -60,10 +68,11 @@
         <Spinner
             android:id="@+id/destination"
             style="@style/SpinnerManualEntry" />
+
         <Button
-            style="@style/BtnSubmit"
             android:id="@+id/submit_btn"
-            android:text="@string/submit"/>
+            style="@style/BtnSubmit"
+            android:text="@string/submit" />
 
     </LinearLayout>
 

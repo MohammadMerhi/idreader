@@ -58,7 +58,7 @@
     <style name="BigBtnMainRelativeLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
-        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_weight">0.34</item>
         <item name="android:clickable">true</item>
     </style>
 
@@ -72,7 +72,7 @@
     <style name="textViewMain">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">25sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:layout_centerVertical">true</item>
         <item name="android:layout_centerHorizontal">true</item>
     </style>
@@ -142,7 +142,7 @@
     <style name="LineTwo">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">2dp</item>
-        <item name="android:background">@color/colorBtnMainScan</item>
+        <item name="android:background">@color/colorBtnMainScanIn</item>
         <item name="android:layout_marginTop">10dp</item>
     </style>
 
@@ -152,5 +152,43 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="ImageViewCirclePin">
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/circle_1</item>
+    </style>
+
+    <style name="LinearLayoutRowPin">
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorBtn</item>
+    </style>
+
+    <style name="KeyPadBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/colorActionBarTwo</item>
+        <item name="android:layout_marginLeft">0.5dp</item>
+        <item name="android:layout_marginRight">0.5dp</item>
+        <item name="android:layout_marginBottom">0.5dp</item>
+        <item name="android:layout_marginTop">0.5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+    <style name="TextViewKeyPad">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
     </style>
 </resources>

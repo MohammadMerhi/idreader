@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.Task;
 
 public class Settings extends AppCompatActivity {
     GoogleSignInClient mGoogleSignInClient;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +30,10 @@ public class Settings extends AppCompatActivity {
     }
 
 
-   public void logOut(View view) {
-
+    public void logOut(View view) {
+        Intent logout = new Intent(this, SignInActivity.class);
+        logout.putExtra("MY_KEY", 1);
+        startActivity(logout);
+        finish();
     }
 }

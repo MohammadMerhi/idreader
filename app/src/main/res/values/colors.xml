@@ -7,7 +7,8 @@
     <color name="colorInput">#414141</color>
     <color name="colorBtn">#ec40afff</color>
     <color name="colorBtnText">#ffffff</color>
-    <color name="colorBtnMainScan">#77c7fe</color>
+    <color name="colorBtnMainScanIn">#77c7fe</color>
+    <color name="colorBtnMainScanOut">#858080</color>
     <color name="colorBtnMainEntry">#fdfdfe</color>
     <color name="colorManualEntry">#858080</color>
     <color name="colorActionBarTwo">#f9f9f9</color>

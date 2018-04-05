@@ -3,10 +3,13 @@
     package="com.example.merhi.idreader">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -19,13 +22,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".SetPINActivity" />
-        <activity android:name=".PINCodeActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".PINCodeActivity">
 
+        </activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".ManualEntry"
             android:label="@string/main_manual_entry_btn"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity">
+
+
+        </activity>
         <activity
             android:name=".Settings"
             android:label="@string/settings"

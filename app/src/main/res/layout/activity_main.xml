@@ -10,20 +10,39 @@
 
     <RelativeLayout
         style="@style/BigBtnMainRelativeLayout"
-        android:background="@color/colorBtnMainScan"
+        android:background="@color/colorBtnMainScanIn"
         android:clickable="true"
         android:onClick="goToScanID">
 
         <ImageView
-            android:id="@+id/circle"
+            android:id="@+id/circleIn"
             style="@style/ImageViewInRelativeLayout"
             android:src="@drawable/circle" />
 
         <TextView
             style="@style/textViewMain"
-            android:layout_below="@id/circle"
-            android:text="@string/main_scanID_btn"
-            android:textColor="@color/colorBtnMainEntry"/>
+            android:layout_below="@id/circleIn"
+            android:text="@string/main_scanIDIN_btn"
+            android:textColor="@color/colorBtnMainEntry" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/BigBtnMainRelativeLayout"
+        android:background="@color/colorBtnMainScanOut"
+        android:clickable="true"
+        android:onClick="goToScanID">
+
+        <ImageView
+            android:id="@+id/circleOut"
+            style="@style/ImageViewInRelativeLayout"
+            android:src="@drawable/circle" />
+
+        <TextView
+            style="@style/textViewMain"
+            android:layout_below="@id/circleOut"
+            android:text="@string/main_scanIDOUT_btn"
+            android:textColor="@color/colorBtnMainEntry" />
 
     </RelativeLayout>
 
@@ -36,13 +55,15 @@
         <ImageView
             android:id="@+id/edit"
             style="@style/ImageViewInRelativeLayout"
+            android:layout_gravity="center"
             android:src="@drawable/edit" />
 
         <TextView
             style="@style/textViewMain"
             android:layout_below="@id/edit"
             android:text="@string/main_manual_entry_btn"
-            android:textColor="@color/colorInput"/>
+            android:textColor="@color/colorInput" />
+
     </RelativeLayout>
 
 </LinearLayout>
