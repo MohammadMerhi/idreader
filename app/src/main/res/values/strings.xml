@@ -27,7 +27,7 @@
     <string name="re_enter_your_new_pin">Re-enter your new PIN code</string>
     <string name="enter_pin_code">Enter PIN Code</string>
     <string name="try_again">Try Again</string>
-    <string name="IP">18.130.46.253:8000</string>
+    <string name="IP">127.0.0.1:8000</string>
     <string name="welcome_msg">Welcome.</string>
     <string name="please_login_msg">Please login.</string>
     <string name="copy_right">2018 \u00a9 ID Card Reader.</string>
