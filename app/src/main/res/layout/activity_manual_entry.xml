@@ -4,13 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.merhi.idreader.ManualEntry">
+    tools:context=".ManualEntry">
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingTop="30dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/visitor_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
 
         <TextView
             style="@style/TextViewManualEntry"
@@ -22,35 +32,12 @@
 
         <TextView
             style="@style/TextViewManualEntry"
-            android:text="@string/manual_entry_middle_name" />
-
-        <EditText
-            android:id="@+id/middle_name"
-            style="@style/InputFieldManualEntry" />
-
-        <TextView
-            style="@style/TextViewManualEntry"
             android:text="@string/manual_entry_last_name" />
 
         <EditText
             android:id="@+id/last_name"
             style="@style/InputFieldManualEntry" />
 
-        <TextView
-            style="@style/TextViewManualEntry"
-            android:text="@string/manual_entry_nationality" />
-
-        <Spinner
-            android:id="@+id/nationality"
-            style="@style/SpinnerManualEntry" />
-
-        <TextView
-            style="@style/TextViewManualEntry"
-            android:text="@string/manual_entry_document_type" />
-
-        <Spinner
-            android:id="@+id/document_type"
-            style="@style/SpinnerManualEntry" />
 
         <TextView
             style="@style/TextViewManualEntry"
@@ -63,17 +50,58 @@
 
         <TextView
             style="@style/TextViewManualEntry"
+            android:text="@string/manual_entry_nationality" />
+
+        <TextView
+            android:id="@+id/req_nationality_spinner"
+            style="@style/Required" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/nationality"
+            style="@style/SpinnerManualEntry" />
+
+        <TextView
+            style="@style/TextViewManualEntry"
+            android:text="@string/manual_entry_document_type" />
+
+        <TextView
+            android:id="@+id/req_tyds_spinner"
+            style="@style/Required" />
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/document_type"
+            style="@style/SpinnerManualEntry" />
+
+
+        <TextView
+            style="@style/TextViewManualEntry"
             android:text="@string/manual_entry_destination" />
 
-        <Spinner
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
             android:id="@+id/destination"
             style="@style/SpinnerManualEntry" />
 
-        <Button
-            android:id="@+id/submit_btn"
-            style="@style/BtnSubmit"
-            android:text="@string/submit" />
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/save_btn"
+                style="@style/BtnManualEntry"
+                android:text="@string/saveBtn"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/add_btn"
+                style="@style/BtnManualEntry"
+                android:text="@string/addBtn" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
     </LinearLayout>
 
 

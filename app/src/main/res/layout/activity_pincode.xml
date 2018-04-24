@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     android:orientation="vertical"
-    android:weightSum="1"
-    tools:context="com.example.merhi.idreader.PINCodeActivity">
+    android:weightSum="10"
+    tools:context=".PINCodeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.5">
+        android:layout_marginTop="10dp"
+        android:layout_weight="7">
 
         <TextView
             android:id="@+id/enter_pin_msg"
@@ -21,14 +23,24 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="15dp"
             android:text="@string/enter_pin_code"
-            android:textSize="25sp" />
+            android:textColor="@color/colorInput"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/enter_pin_msg"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorInput" />
 
         <LinearLayout
             android:id="@+id/linear_layout_containing_four_circles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true">
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp">
 
             <ImageView
                 android:id="@+id/circle_one"
@@ -57,123 +69,331 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="3"
         android:orientation="vertical"
         android:weightSum="4">
 
         <LinearLayout style="@style/LinearLayoutRowPin">
 
-            <LinearLayout
+            <RelativeLayout
                 android:id="@+id/Btn1"
                 style="@style/KeyPadBtn">
 
+                <ImageView
+                    android:id="@+id/circle_shape_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_btn" />
+
                 <TextView
                     style="@style/TextViewKeyPad"
+                    android:layout_alignBottom="@+id/circle_shape_one"
+                    android:layout_alignLeft="@+id/circle_shape_one"
+                    android:layout_alignRight="@+id/circle_shape_one"
+                    android:layout_alignTop="@+id/circle_shape_one"
                     android:text="1" />
-            </LinearLayout>
 
-            <LinearLayout
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/circle_shape_one"
+                    android:layout_alignLeft="@+id/circle_shape_one"
+                    android:layout_alignRight="@+id/circle_shape_one"
+                    android:layout_alignTop="@+id/circle_shape_one"
+                    android:src="@drawable/ripple" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/Btn2"
                 style="@style/KeyPadBtn">
 
+                <ImageView
+                    android:id="@+id/circle_shape_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_btn" />
+
                 <TextView
                     style="@style/TextViewKeyPad"
+                    android:layout_alignBottom="@+id/circle_shape_two"
+                    android:layout_alignLeft="@+id/circle_shape_two"
+                    android:layout_alignRight="@+id/circle_shape_two"
+                    android:layout_alignTop="@+id/circle_shape_two"
                     android:text="2" />
-            </LinearLayout>
 
-            <LinearLayout
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/circle_shape_two"
+                    android:layout_alignLeft="@+id/circle_shape_two"
+                    android:layout_alignRight="@+id/circle_shape_two"
+                    android:layout_alignTop="@+id/circle_shape_two"
+                    android:src="@drawable/ripple" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/Btn3"
                 style="@style/KeyPadBtn">
 
+                <ImageView
+                    android:id="@+id/circle_shape_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_btn" />
+
                 <TextView
                     style="@style/TextViewKeyPad"
+                    android:layout_alignBottom="@+id/circle_shape_three"
+                    android:layout_alignLeft="@+id/circle_shape_three"
+                    android:layout_alignRight="@+id/circle_shape_three"
+                    android:layout_alignTop="@+id/circle_shape_three"
                     android:text="3" />
-            </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/circle_shape_three"
+                    android:layout_alignLeft="@+id/circle_shape_three"
+                    android:layout_alignRight="@+id/circle_shape_three"
+                    android:layout_alignTop="@+id/circle_shape_three"
+                    android:src="@drawable/ripple" />
+            </RelativeLayout>
 
         </LinearLayout>
 
         <LinearLayout style="@style/LinearLayoutRowPin">
 
-            <LinearLayout
+            <RelativeLayout
                 android:id="@+id/Btn4"
                 style="@style/KeyPadBtn">
 
+                <ImageView
+                    android:id="@+id/circle_shape_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_btn" />
+
                 <TextView
                     style="@style/TextViewKeyPad"
+                    android:layout_alignBottom="@+id/circle_shape_four"
+                    android:layout_alignLeft="@+id/circle_shape_four"
+                    android:layout_alignRight="@+id/circle_shape_four"
+                    android:layout_alignTop="@+id/circle_shape_four"
                     android:text="4" />
-            </LinearLayout>
 
-            <LinearLayout
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/circle_shape_four"
+                    android:layout_alignLeft="@+id/circle_shape_four"
+                    android:layout_alignRight="@+id/circle_shape_four"
+                    android:layout_alignTop="@+id/circle_shape_four"
+                    android:src="@drawable/ripple" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/Btn5"
                 style="@style/KeyPadBtn">
 
+                <ImageView
+                    android:id="@+id/circle_shape_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_btn" />
+
                 <TextView
                     style="@style/TextViewKeyPad"
+                    android:layout_alignBottom="@+id/circle_shape_five"
+                    android:layout_alignLeft="@+id/circle_shape_five"
+                    android:layout_alignRight="@+id/circle_shape_five"
+                    android:layout_alignTop="@+id/circle_shape_five"
                     android:text="5" />
-            </LinearLayout>
 
-            <LinearLayout
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/circle_shape_five"
+                    android:layout_alignLeft="@+id/circle_shape_five"
+                    android:layout_alignRight="@+id/circle_shape_five"
+                    android:layout_alignTop="@+id/circle_shape_five"
+                    android:src="@drawable/ripple" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/Btn6"
                 style="@style/KeyPadBtn">
 
+                <ImageView
+                    android:id="@+id/circle_shape_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_btn" />
+
                 <TextView
                     style="@style/TextViewKeyPad"
+                    android:layout_alignBottom="@+id/circle_shape_six"
+                    android:layout_alignLeft="@+id/circle_shape_six"
+                    android:layout_alignRight="@+id/circle_shape_six"
+                    android:layout_alignTop="@+id/circle_shape_six"
                     android:text="6" />
-            </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/circle_shape_six"
+                    android:layout_alignLeft="@+id/circle_shape_six"
+                    android:layout_alignRight="@+id/circle_shape_six"
+                    android:layout_alignTop="@+id/circle_shape_six"
+                    android:src="@drawable/ripple" />
+            </RelativeLayout>
         </LinearLayout>
 
         <LinearLayout style="@style/LinearLayoutRowPin">
 
-            <LinearLayout
+            <RelativeLayout
                 android:id="@+id/Btn7"
                 style="@style/KeyPadBtn">
 
+                <ImageView
+                    android:id="@+id/circle_shape_seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_btn" />
+
                 <TextView
                     style="@style/TextViewKeyPad"
+                    android:layout_alignBottom="@+id/circle_shape_seven"
+                    android:layout_alignLeft="@+id/circle_shape_seven"
+                    android:layout_alignRight="@+id/circle_shape_seven"
+                    android:layout_alignTop="@+id/circle_shape_seven"
                     android:text="7" />
-            </LinearLayout>
 
-            <LinearLayout
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/circle_shape_seven"
+                    android:layout_alignLeft="@+id/circle_shape_seven"
+                    android:layout_alignRight="@+id/circle_shape_seven"
+                    android:layout_alignTop="@+id/circle_shape_seven"
+                    android:src="@drawable/ripple" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/Btn8"
                 style="@style/KeyPadBtn">
 
+                <ImageView
+                    android:id="@+id/circle_shape_eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_btn" />
+
                 <TextView
                     style="@style/TextViewKeyPad"
+                    android:layout_alignBottom="@+id/circle_shape_eight"
+                    android:layout_alignLeft="@+id/circle_shape_eight"
+                    android:layout_alignRight="@+id/circle_shape_eight"
+                    android:layout_alignTop="@+id/circle_shape_eight"
                     android:text="8" />
-            </LinearLayout>
 
-            <LinearLayout
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/circle_shape_eight"
+                    android:layout_alignLeft="@+id/circle_shape_eight"
+                    android:layout_alignRight="@+id/circle_shape_eight"
+                    android:layout_alignTop="@+id/circle_shape_eight"
+                    android:src="@drawable/ripple" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:id="@+id/Btn9"
                 style="@style/KeyPadBtn">
 
+                <ImageView
+                    android:id="@+id/circle_shape_nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_btn" />
+
                 <TextView
                     style="@style/TextViewKeyPad"
+                    android:layout_alignBottom="@+id/circle_shape_nine"
+                    android:layout_alignLeft="@+id/circle_shape_nine"
+                    android:layout_alignRight="@+id/circle_shape_nine"
+                    android:layout_alignTop="@+id/circle_shape_nine"
                     android:text="9" />
-            </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/circle_shape_nine"
+                    android:layout_alignLeft="@+id/circle_shape_nine"
+                    android:layout_alignRight="@+id/circle_shape_nine"
+                    android:layout_alignTop="@+id/circle_shape_nine"
+                    android:src="@drawable/ripple" />
+            </RelativeLayout>
         </LinearLayout>
 
         <LinearLayout style="@style/LinearLayoutRowPin">
 
             <LinearLayout style="@style/KeyPadBtn"></LinearLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:id="@+id/Btn0"
                 style="@style/KeyPadBtn">
 
+                <ImageView
+                    android:id="@+id/circle_shape_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_btn" />
+
                 <TextView
                     style="@style/TextViewKeyPad"
+                    android:layout_alignBottom="@+id/circle_shape_zero"
+                    android:layout_alignLeft="@+id/circle_shape_zero"
+                    android:layout_alignRight="@+id/circle_shape_zero"
+                    android:layout_alignTop="@+id/circle_shape_zero"
                     android:text="0" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/Btn_backspace"
-                style="@style/KeyPadBtn">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/backspace" />
-            </LinearLayout>
+                    android:layout_alignBottom="@+id/circle_shape_zero"
+                    android:layout_alignLeft="@+id/circle_shape_zero"
+                    android:layout_alignRight="@+id/circle_shape_zero"
+                    android:layout_alignTop="@+id/circle_shape_zero"
+                    android:src="@drawable/ripple" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Btn_backspace"
+                style="@style/KeyPadBtn">
+
+                <TextView
+                    android:id="@+id/delete_btn_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/effect"
+                    android:layout_alignLeft="@+id/effect"
+                    android:layout_alignRight="@+id/effect"
+                    android:layout_alignTop="@+id/effect"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Delete"
+                    android:textColor="@color/colorInput"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/effect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_btn_effect" />
+            </RelativeLayout>
         </LinearLayout>
 
 

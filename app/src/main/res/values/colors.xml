@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimary">#17c4bb</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#40afff</color>
+    <color name="colorAccent">#17c4bb</color>
     <color name="colorMessage">#a9a6a6</color>
     <color name="colorInput">#414141</color>
-    <color name="colorBtn">#ec40afff</color>
     <color name="colorBtnText">#ffffff</color>
-    <color name="colorBtnMainScanIn">#77c7fe</color>
-    <color name="colorBtnMainScanOut">#858080</color>
-    <color name="colorBtnMainEntry">#fdfdfe</color>
-    <color name="colorManualEntry">#858080</color>
     <color name="colorActionBarTwo">#f9f9f9</color>
+    <color name="colorVisitorFound">#0ca60f</color>
+    <color name="colorTextColor">#AAB5BC</color>
+    <color name="colorBackground">#eef1f5</color>
 </resources>

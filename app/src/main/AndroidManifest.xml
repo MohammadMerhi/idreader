@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.merhi.idreader">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.idreaderinternship">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
@@ -22,28 +27,41 @@
             </intent-filter>
         </activity>
         <activity android:name=".SetPINActivity" />
-        <activity android:name=".PINCodeActivity">
-
-        </activity>
+        <activity android:name=".PINCodeActivity" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".ManualEntry"
             android:label="@string/main_manual_entry_btn"
             android:parentActivityName=".MainActivity">
-
-
+            <intent-filter>
+                <action android:name="com.idreaderinternship" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Settings"
             android:label="@string/settings"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme2" />
-        <activity android:name=".ScanID" />
+            android:parentActivityName=".MainActivity" />
+        <!--android:theme="@style/AppTheme2" />-->
+        <activity
+            android:name=".ScanID"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ChangePINCode"
             android:label="@string/change_pin_code"
-            android:parentActivityName=".Settings"
-            android:theme="@style/AppTheme2" />
+            android:parentActivityName=".Settings" />
+        <!--android:theme="@style/AppTheme2" />-->
+        <activity
+            android:name=".ManualEntryCheckOut"
+            android:label="@string/main_manual_entry_btn"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name="com.microblink.activity.BarcodeScanActivity"
+            android:parentActivityName=".ScanID"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            tools:replace="android:theme" />
     </application>
 
 </manifest>

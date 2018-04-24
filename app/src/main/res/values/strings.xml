@@ -3,11 +3,14 @@
     <string name="set_pin_msg_1">Set a 4-digit PIN Code</string>
     <string name="set_pin_msg_2">Re-enter the 4-digit PIN Code</string>
     <string name="submit">Submit</string>
+    <string name="addBtn">Add Visitor</string>
+    <string name="saveBtn">Save Log</string>
     <string name="next">Next</string>
     <string name="settings">Settings</string>
-    <string name="main_scanIDIN_btn">Scan an entering ID </string>
-    <string name="main_scanIDOUT_btn">Scan a leaving ID </string>
-    <string name="main_manual_entry_btn">Manual Entry</string>
+    <string name="main_scanIdIn_btn">Scan an entering ID </string>
+    <string name="main_scanIdOur_btn">Scan a leaving ID </string>
+    <string name="main_manual_entry_btn">Manual Entry </string>
+    <string name="main_manual_entry_btn_leaving">Manual Entry Leaving</string>
     <string name="manual_entry_first_name">First Name</string>
     <string name="manual_entry_middle_name">Middle Name</string>
     <string name="manual_entry_last_name">Last Name</string>
@@ -24,17 +27,15 @@
     <string name="re_enter_your_new_pin">Re-enter your new PIN code</string>
     <string name="enter_pin_code">Enter PIN Code</string>
     <string name="try_again">Try Again</string>
-    <string name="IP">172.33.135.232:8000</string>
+    <string name="IP">18.130.46.253:8000</string>
+    <string name="welcome_msg">Welcome.</string>
+    <string name="please_login_msg">Please login.</string>
+    <string name="copy_right">2018 \u00a9 ID Card Reader.</string>
+    <string name="check_out_visitor">Check Out</string>
 
-
-    <string-array name="nationality">
-        <item>Lebanese</item>
-        <item>Palestinian</item>
-        <item>Syrian</item>
-        <item>Other</item>
-    </string-array>
 
     <string-array name="document_type">
+        <item>Choose Document Type</item>
         <item>ID Card</item>
         <item>Passport</item>
     </string-array>

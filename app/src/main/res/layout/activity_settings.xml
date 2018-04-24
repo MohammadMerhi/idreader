@@ -4,44 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.merhi.idreader.Settings">
+    tools:context=".Settings"
+    android:background="@color/colorBackground">
 
-    <TextView
-        android:id="@+id/text_view_settings_one"
-        style="@style/TextViewSettings"
-        android:text="@string/message_settings" />
+    <!--<TextView-->
+    <!--android:id="@+id/text_view_settings_one"-->
+    <!--style="@style/TextViewSettings"-->
+    <!--android:text="@string/message_settings" />-->
 
-    <View
-        android:id="@+id/line1"
-        style="@style/LineOne"
-        android:layout_below="@id/text_view_settings_one" />
+    <!--<View-->
+    <!--android:id="@+id/line1"-->
+    <!--style="@style/LineOne"-->
+    <!--android:layout_below="@id/text_view_settings_one" />-->
 
-    <TextView
-        android:id="@+id/text_view_settings_two"
-        style="@style/TextViewSettingsTwo"
-        android:layout_below="@id/line1"
+    <!--<TextView-->
+    <!--android:id="@+id/text_view_settings_two"-->
+    <!--style="@style/TextViewSettingsTwo"-->
+    <!--android:clickable="true"-->
+    <!--android:onClick="goToChangePin"-->
+    <!--android:text="@string/message_settings_two" />-->
+
+    <!--<View-->
+    <!--android:id="@+id/line2"-->
+    <!--style="@style/LineTwo"-->
+    <!--android:layout_below="@id/text_view_settings_two" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/text_view_settings_three"-->
+    <!--style="@style/TextViewSettingsTwo"-->
+    <!--android:layout_below="@id/line2"-->
+    <!--android:clickable="true"-->
+    <!--android:onClick="logOut"-->
+    <!--android:text="@string/message_settings_three" />-->
+
+    <!--<View-->
+    <!--android:id="@+id/line3"-->
+    <!--style="@style/LineTwo"-->
+    <!--android:layout_below="@id/text_view_settings_three" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rip_btn_settings"
         android:clickable="true"
         android:onClick="goToChangePin"
-        android:text="@string/message_settings_two" />
+        android:id="@+id/first_linear_btn"
+        android:layout_margin="7dp">
 
-    <View
-        android:id="@+id/line2"
-        style="@style/LineTwo"
-        android:layout_below="@id/text_view_settings_two" />
+        <TextView
+            style="@style/TextViewSettings"
+            android:text="@string/message_settings_two" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/text_view_settings_three"
-        style="@style/TextViewSettingsTwo"
-        android:layout_below="@id/line2"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rip_btn_settings"
         android:clickable="true"
-        android:text="@string/message_settings_three"
-        android:onClick="logOut"/>
+        android:onClick="logOut"
+        android:layout_below="@+id/first_linear_btn"
+        android:layout_margin="7dp">
 
-    <View
-        android:id="@+id/line3"
-        style="@style/LineTwo"
-        android:layout_below="@id/text_view_settings_three" />
-
-
+        <TextView
+            style="@style/TextViewSettings"
+            android:text="@string/message_settings_three" />
+    </LinearLayout>
 
 </RelativeLayout>

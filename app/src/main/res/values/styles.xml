@@ -45,54 +45,58 @@
         <item name="android:layout_marginTop">30dp</item>
     </style>
 
-    <style name="Btn">
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/colorBtn</item>
-        <item name="android:textColor">@color/colorBtnText</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:layout_marginTop">15dp</item>
-    </style>
-
     <style name="BigBtnMainRelativeLayout">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:layout_weight">0.34</item>
-        <item name="android:clickable">true</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">7dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginRight">12dp</item>
     </style>
 
     <style name="ImageViewInRelativeLayout">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">10dp</item>
     </style>
 
     <style name="textViewMain">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:layout_centerVertical">true</item>
         <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/colorTextColor</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 
     <style name="TextViewManualEntry">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">25sp</item>
-        <item name="android:textColor">@color/colorManualEntry</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorTextColor</item>
+        <item name="android:paddingLeft">30dp</item>
+    </style>
+
+    <style name="Required">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#ff0000</item>
         <item name="android:paddingLeft">30dp</item>
     </style>
 
     <style name="InputFieldManualEntry">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">25sp</item>
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorInput</item>
         <item name="android:layout_marginLeft">30dp</item>
         <item name="android:layout_marginRight">30dp</item>
         <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:singleLine">true</item>
     </style>
 
     <style name="SpinnerManualEntry">
@@ -106,44 +110,22 @@
         <item name="android:layout_marginBottom">15dp</item>
     </style>
 
-    <style name="BtnSubmit">
+    <style name="BtnManualEntry">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/colorBtn</item>
-        <item name="android:textColor">@color/colorBtnText</item>
+        <item name="android:background">@drawable/rip_btn_btn</item>
+        <item name="android:textColor">@color/colorTextColor</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">10dp</item>
+
     </style>
 
     <style name="TextViewSettings">
-        <item name="android:layout_marginTop">15dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">25sp</item>
-        <item name="android:paddingLeft">30dp</item>
-    </style>
-
-    <style name="TextViewSettingsTwo">
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:paddingLeft">60dp</item>
-    </style>
-
-    <style name="LineOne">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">2dp</item>
-        <item name="android:background">@color/colorBtn</item>
-        <item name="android:layout_marginTop">10dp</item>
-    </style>
-
-    <style name="LineTwo">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">2dp</item>
-        <item name="android:background">@color/colorBtnMainScanIn</item>
-        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textColor">@color/colorTextColor</item>
     </style>
 
     <style name="title_change_pin">
@@ -168,14 +150,15 @@
         <item name="android:weightSum">3</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">@color/colorBtn</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">#ffffff</item>
     </style>
 
     <style name="KeyPadBtn">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:background">@color/colorActionBarTwo</item>
+        <item name="android:background">#ffffff</item>
         <item name="android:layout_marginLeft">0.5dp</item>
         <item name="android:layout_marginRight">0.5dp</item>
         <item name="android:layout_marginBottom">0.5dp</item>
@@ -189,6 +172,16 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">35sp</item>
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorInput</item>
+        <item name="android:gravity">center</item>
     </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/btn</item>
+        <item name="android:textColor">@color/colorTextColor</item>
+        <item name="android:windowTitleSize">20sp</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingRight">7dp</item>
+    </style>
+
 </resources>

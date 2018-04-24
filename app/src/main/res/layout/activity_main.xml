@@ -4,66 +4,182 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     android:orientation="vertical"
-    android:weightSum="1"
-    tools:context="com.example.merhi.idreader.MainActivity">
+    android:weightSum="4"
+    tools:context=".MainActivity">
 
     <RelativeLayout
         style="@style/BigBtnMainRelativeLayout"
-        android:background="@color/colorBtnMainScanIn"
+        android:background="@drawable/rip_btn_one"
         android:clickable="true"
-        android:onClick="goToScanID">
+        android:onClick="onScanButtonClick">
 
         <ImageView
             android:id="@+id/circleIn"
             style="@style/ImageViewInRelativeLayout"
-            android:src="@drawable/circle" />
+            android:src="@drawable/cir_one" />
 
         <TextView
             style="@style/textViewMain"
-            android:layout_below="@id/circleIn"
-            android:text="@string/main_scanIDIN_btn"
-            android:textColor="@color/colorBtnMainEntry" />
+            android:layout_toRightOf="@id/circleIn"
+            android:text="@string/main_scanIdIn_btn" />
 
     </RelativeLayout>
 
     <RelativeLayout
         style="@style/BigBtnMainRelativeLayout"
-        android:background="@color/colorBtnMainScanOut"
-        android:clickable="true"
-        android:onClick="goToScanID">
-
-        <ImageView
-            android:id="@+id/circleOut"
-            style="@style/ImageViewInRelativeLayout"
-            android:src="@drawable/circle" />
-
-        <TextView
-            style="@style/textViewMain"
-            android:layout_below="@id/circleOut"
-            android:text="@string/main_scanIDOUT_btn"
-            android:textColor="@color/colorBtnMainEntry" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        style="@style/BigBtnMainRelativeLayout"
-        android:background="@color/colorBtnMainEntry"
+        android:background="@drawable/rip_btn_two"
         android:clickable="true"
         android:onClick="goToManualEntry">
 
         <ImageView
-            android:id="@+id/edit"
+            android:id="@+id/editIn"
             style="@style/ImageViewInRelativeLayout"
-            android:layout_gravity="center"
-            android:src="@drawable/edit" />
+            android:src="@drawable/ic_mode_edit_black_48dp_2" />
 
         <TextView
             style="@style/textViewMain"
-            android:layout_below="@id/edit"
-            android:text="@string/main_manual_entry_btn"
-            android:textColor="@color/colorInput" />
+            android:layout_toRightOf="@id/editIn"
+            android:text="@string/main_manual_entry_btn" />
 
     </RelativeLayout>
 
+    <RelativeLayout
+        style="@style/BigBtnMainRelativeLayout"
+        android:background="@drawable/rip_btn_three"
+        android:clickable="true">
+        <!--android:onClick="onScanButtonClick">-->
+
+        <ImageView
+            android:id="@+id/circleOut"
+            style="@style/ImageViewInRelativeLayout"
+            android:layout_gravity="center"
+            android:src="@drawable/cir_two" />
+
+        <TextView
+            style="@style/textViewMain"
+            android:layout_toRightOf="@id/circleOut"
+            android:text="@string/main_scanIdOur_btn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/BigBtnMainRelativeLayout"
+        android:background="@drawable/rip_btn_four"
+        android:clickable="true"
+        android:onClick="goToManualEntryCheckOut">
+
+        <ImageView
+            android:id="@+id/editOut"
+            style="@style/ImageViewInRelativeLayout"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_mode_edit_black_48dp_4" />
+
+        <TextView
+            style="@style/textViewMain"
+            android:layout_toRightOf="@id/editOut"
+            android:text="@string/main_manual_entry_btn_leaving" />
+
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="2"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="2">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_marginBottom="20dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/btn1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/main_btn_one"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--/>-->
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/btn1"-->
+    <!--android:layout_alignLeft="@+id/btn1"-->
+    <!--android:layout_alignRight="@+id/btn1"-->
+    <!--android:layout_alignTop="@+id/btn1"-->
+    <!--android:src="@drawable/circle"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_marginTop="20dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/btn2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/main_btn_two"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_centerHorizontal="true"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignBottom="@+id/btn2"-->
+    <!--android:layout_alignLeft="@+id/btn2"-->
+    <!--android:layout_alignRight="@+id/btn2"-->
+    <!--android:layout_alignTop="@+id/btn2"-->
+    <!--android:src="@drawable/edit"/>-->
+    <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="2"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="2">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_marginBottom="20dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/circle_shape_one"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/main_btn_three"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_centerHorizontal="true"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_marginTop="20dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/circle_shape_one"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/main_btn_four"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_centerHorizontal="true"/>-->
+    <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
 </LinearLayout>

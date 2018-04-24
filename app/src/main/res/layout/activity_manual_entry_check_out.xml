@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManualEntryCheckOut">
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/TextViewManualEntry"
+        android:layout_marginTop="50dp"
+        android:text="@string/manual_entry_document_number" />
+
+    <EditText
+        android:id="@+id/document_number"
+        style="@style/InputFieldManualEntry"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/check_out_btn"
+        style="@style/BtnManualEntry"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:text="@string/check_out_visitor" />
+</LinearLayout>
